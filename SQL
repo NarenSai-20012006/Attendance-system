@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS attendancereg;
+
+USE attendancereg;
+
+CREATE TABLE IF NOT EXISTS attendance (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    reg_no VARCHAR(20) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+select * from attendance;
